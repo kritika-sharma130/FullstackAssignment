@@ -368,8 +368,18 @@
             #banner{
                 font-size: 2em;
             }
+
         }
-       
+        .about{
+            position: sticky;
+        }
+        
+       @media screen and (max-width: 525px) {
+           #paraAboutProject{
+            font-size: 2px;
+            width: 200px;
+           }
+       }
     </style>
    
   <body>
@@ -445,7 +455,7 @@
 <div  id="about"style="text-align: center;margin-top: 7px;font-weight: bolder;font-size: large;font-size: 22px;">About Us
     <div style="display: flex;margin-top: 10px;"> 
         
-        <div style="background-color: grey;margin-right: 10px; width: 50%;height: 351px;color: white;font-size: large;margin-left: 20px;">
+        <div  id="paraAboutProject" style="background-color: grey;margin-right: 10px; width: 50%;height: 351px;color: white;font-size: large;margin-left: 20px;">
         <h4 style="margin-left: 6px;text-align: left;margin-top: 5px;font-size: 20px;">About Projects</h4>
         <p style="font-size: 15px;">
             Frontend Development includes:<br>
