@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+
+			body {
+				position: absolute;
+				left: 0%;
+				text-align: center;
+                margin-left: 18%;
+                padding-left: 18%;
+                background-color: grey;
+                margin-top: 10%;
+            
+			}
+
+			.container {
+				justify-content: center;
+				align-items: center;
+				display: flex;
+                flex-direction: row;
+				height: 100%;
+				text-align: center;
+			}
+
+
+			button {
+				width: 50px;
+				height: 30px;
+				font-size: 30px;
+				background-color:yellow;
+				color: honeydew;
+			}
+
+			button:hover {
+				background-color:khaki;
+				color: grey;
+			}
+
+
+			h2 {
+				color: black;
+				margin: 0 50px;
+				font-size: 45px;
+			}
+
+			h1 {
+				font-size: 35px;
+				color: green;
+				text-align: center;
+				padding-left: 10%;
+			}
+            .parent{
+                display: flex;
+                flex-direction: row;
+            }
+		</style>
+	</head>
+
+	<body>
+		<h1><span style="color: white;">COUNTER</span></h1>
+        <div="parent">
+		<div="container">
+			<button onclick="increment()"><span style="color: black;text-align: center;">+</span></button>
+			<h2 style = "display: inline;" id="counting"></h2>
+			<button onclick="decrement()" ><span style="padding: 2% 2%; color: black;text-align: center;">-</span></button>
+		</div=>
+        </div>
+		<script>
+			var data = 0;
+			document.getElementById("counting").innerText = data;
+			function increment() {
+				data = data + 1;
+				document.getElementById("counting").innerText = data;
+			}
+			function decrement() {
+                if(document.getElementById("counting").textContent==0){
+                document.getElementById("button").disabled = true;
+            }
+				data = data - 1;
+				document.getElementById("counting").innerText = data;
+			}
+            
+		</script>
+	</body>
+</html>
