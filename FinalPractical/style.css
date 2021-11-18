@@ -1,0 +1,27 @@
+* {
+  transition: all 0.3s ease-in-out;
+  background-image: "https://www.google.com/search?q=texture+background+design+in+light&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixqszN_6D0AhVhs1YBHVU9DIEQ_AUoAXoECAEQAw&biw=1366&bih=625&dpr=1#imgrc=D2onP5jtYwvSsM";
+}
+
+.container {
+  clear: both;
+  overflow: auto;
+}
+
+nav {
+  float: right;
+}
+
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-family: raleway;
+  margin-right: 20px;
+}
+
+ul li:hover {
+  color: orange;
+}
